@@ -1,0 +1,162 @@
+/*report css */
+
+.my_tickets{
+    font-size: 17px;
+    margin-left: 12%;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-dialog {
+      width: 1000px; 
+    }
+}
+
+#column{
+    text-align: center;
+    padding: 10px;
+}
+
+.status-pending{
+    background-color: #ffbf00;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    float: right;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.status-checked{
+    background-color: #008000;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    float: right;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.list-group-item-text{
+    width: 90%;
+}
+
+#check-button{
+    float: right;
+    margin: 3px;
+}
+
+#uncheck-button{
+    float: right;
+    margin: 3px;
+}
+
+.deleteBtn{
+    float: right;
+    margin: 3px;
+}
+
+.mymodal2{
+    display: none;
+    padding: 5px;
+}
+
+.list-group-item{
+    height: 210px;
+    padding: 5px;
+    border-radius: 10px;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+#stats{
+    float: left;
+}
+
+.description{
+    font-size: 18px;
+}
+
+#list-word {
+    font-size: 18px;
+}
+
+#cat-btn{
+    font-size: 20px;
+}
+
+.category-radio{
+    border: 1px black;
+    text-align: center
+}
+
+#category-blocks{
+    text-align: center;
+}
+
+.category-radio label{
+    font-size: 28px;
+    background-color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.category-radio input[type="radio"]:checked+label{
+    color: #0052cc;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.back-btn{
+    border-color: transparent;
+    border-width: 1;
+    background-color: transparent;
+    border: 0;
+}
+
+.back-btn:hover {
+    color: red;
+}
+
+#pendingUp{
+    display: none;
+    float: right;
+}
+
+#pendingDown{
+    display: block;
+    float: right;
+}
+
+.pendingReports{
+    display: none;
+}
+
+#resolvedUp{
+    display: none;
+    float: right;
+}
+
+#resolvedDown{
+    display: block;
+    float: right;
+}
+
+.resolvedReports{
+    display: none;
+}
+
+.img:hover{
+    color: #424242; 
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+    opacity: 1;
+    transform: scale(1.15);
+    -ms-transform: scale(3.5); /* IE 9 */
+    -webkit-transform: scale(3.5); /* Safari and Chrome */
+    background-color: #e6e6e6;
+    padding: 8px;
+}

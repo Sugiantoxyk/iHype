@@ -1,0 +1,101 @@
+/* faq css */
+
+.a{
+    color: black;
+}
+
+.a:hover{
+    text-decoration: none;
+    color:black;
+}
+
+.faq_title{
+    float: left;
+}
+
+.category-item{
+    text-align: center;
+    border-radius: 2px;
+    padding: 10px 0px 10px 0px;
+    transform: translate3d(0,0,0);
+    transition: box-shadow 300ms;
+}
+
+.category-item:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.category-desc{
+    display: inline-block;
+}
+
+#account, #acct-title{
+    display: none;
+}
+
+#techsupport, #tech-title{
+    display: none;
+}
+
+#hypecode, #hype-title{
+    display: none;
+}
+
+#others, #oth-title{
+    display: none;
+}
+
+.inputs {
+    padding: 5px 5px;
+    border: none;
+    border-bottom: 1px solid rgb(95, 95, 95);
+    width: 70%;
+    margin-bottom: 15px;
+    margin-top: -5px;
+}
+
+.back-btn{
+    border-color: transparent;
+    border-width: 1;
+    background-color: transparent;
+    border: 0;
+}
+
+.back-btn:hover {
+    color: red;
+}
+ 
+#list-word{
+    white-space: pre-line;
+}
+
+.list-group-item{
+    padding: 5px;
+    padding-top: 0;
+    border-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.category-radio{
+    border: 1px black;
+    text-align: center
+}
+
+#category-blocks{
+    text-align: center;
+}
+
+.category-radio label{
+    font-size: 28px;
+    background-color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.category-radio input[type="radio"]:checked+label{
+    color: #0052cc;
+}
+
+input[type="radio"]{
+    display: none;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="icon" href="/public/images/noBGLogo.png">
+        <link rel="stylesheet" href="/public/css/ban.css">
+        <title>iHype - <%= title %></title>
+        <% include ./includes/javascript %>
+        <% include ./includes/stylesheet %>
+    </head>
+    <body>
+        <% include ./includes/header %>
+    <div class="container text-justify">
+        <button onclick="goBack()" class="back-btn">◄ Back to Help Centre</button>
+        <br><br>
+        <div>
+            <div class="FaqForm">
+                <h2>Ban User Form</h2>
+                <br>
+                <fieldset class="form-group">
+                    <label for="banninguser" style="font-size: 18px">Banning</label>&nbsp;
+                    <label type="text" id="banninguser" name="blacklist" style="font-size: 25px; color: red;"></label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="banreason" style="font-size: 18px;">Reason for Ban</label>
+                    <textarea id="banreason" name="reason" rows="8" class="form-control" placeholder="Exploiting..." autocomplete="off" required="" maxlength="352"></textarea>
+                    <small>Max Characters: 352</small>
+                </fieldset>
+                <input type="submit" class="btn btn-danger" value="BAN" onclick="banButton(document.getElementById('banninguser').innerHTML, document.getElementById('banreason').value)">&nbsp;
+                <input type="button" class="BLclose btn btn-secondary" value="Close">
+            </div>
+        </div>
+        <!--secondary password modal-->
+        <div class="modal fade" id="passModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Enter Ban Password</h4>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset class="form-group">
+                            <label for="banPassword" style="font-size: 18px;">Ban Password: </label><br>
+                            <input type="password" class="form-control" id="banPassword" name="banPassword" placeholder="Ban password" required>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="button" class="btn btn-danger" value="BAN" data-toggle="modal" data-target="#passModal">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% if(reportedUsers.length > 0) {%>
+        <div id="reportedUsers">
+            <table>
+                <h2>User Reports</h2>
+                <tr>
+                    <th class="col-sm-2">Username</th>
+                    <th class="col-sm-9">Reason</th>
+                    <th class="col-sm-1" id="actionHead">Delete</th>
+                </tr>
+                <% for(var i=0; i<reportedUsers.length; i++ ) { %>
+                    <tr>
+                        <td><%= reportedUsers[i].report_username %></td>
+                        <td><%= reportedUsers[i].report_reason %></td>
+                        <td id="actionBtn">
+                                <input type="submit" class="btn btn-danger" value="Delete" onclick="deleteBtn('<%= reportedUsers[i].report_id %>')">
+                            </button>
+                        </td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+        <% } %>
+        <% if(users.length == 0) { %>
+            <% if (reportedUsers.length == 0) { %>
+                <div id="nowhite">
+                    <big>No Reported Users</big>
+                </div>
+            <% } %>
+        <% } %>
+
+        <% if(users.length > 0) { %>
+        <div id="whitelisted">
+        <table>
+            <h2>iHype Users</h2>
+            <tr>
+                <th class="col-sm-2">Username</th>
+                <th class="col-sm-3">Name</th>
+                <th class="col-sm-3">Email</th>
+                <th class="col-sm-2">Mobile No.</th>
+                <th class="col-sm-1">Blacklist</th>
+                <th class="col-sm-1" id="actionHead">Ban</th>
+            </tr>
+            <% for(var i=0; i<users.length; i++ ) { %>
+                <tr>
+                    <td><%= users[i].username %></td>
+                    <td><%= users[i].firstname %>&nbsp;&nbsp;<%= users[i].lastname %></td>
+                    <td><%= users[i].email %></td>
+                    <td><%= users[i].mobile %></td>
+                    <% if(users[i].banned == "yes") { %>
+                        <td>Yes</td>
+                    <% } %>
+                    <% if(users[i].banned == "no"){ %>
+                        <td>No</td>
+                    <% } %>
+                    <% if(users[i].banned == "no") { %>
+                    <td id="actionBtn">
+                        <button type="button" class="btn btn-danger BLbtn" value="<%= users[i].username %>">
+                            <strong>Blacklist</strong>
+                        </button>
+                    </td>
+                    <% } %>
+                </tr>
+            <% } %>
+        </table>
+        </div>
+        <% } %>
+        <% if(users.length == 0) { %>
+        <div id="nowhite">
+            <big>No Users</big>
+        </div>
+        <% } %>
+    </div>
+        <br><br><br>
+    <div class="container text-justify">
+        <% if(bans.length > 0) { %>
+        <div id="blacklisted">
+        <table>
+            <h2>iHype Blacklisted Users</h2>
+            <tr>
+                <th class="col-sm-2">Username</th>
+                <th class="col=sm-9">Reason</th>
+                <th class="col-sm-1" id="actionHead" style="color: #ffa600;">Unban</th>
+            </tr>
+            <% for(var i=0; i<bans.length; i++) { %>
+                <tr>
+                    <td>
+                        <%= bans[i].blacklist %>
+                    </td>
+                    <td>
+                        <%= bans[i].reason %>
+                    </td>
+                    <td id="actionBtn">
+                        <button class="btn btn-warning deleteBtn" type="button" onclick="unbanButton('<%= bans[i].blacklist %>', '<%= bans[i].ban_id %>');">
+                            <strong>Whitelist</strong>
+                        </button>
+                    </td>
+                </tr>
+            <% } %>
+        </table>
+        </div>
+        <% } %>
+        <% if(bans.length == 0) { %>
+            <% if(users.length > 0) { %>
+                <div id="noblack">
+                    <big>No Blacklisted Users</big>
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+        <% if(users.length == 0) { %>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <% } %>
+        <% if(users.length == 1) { %>
+        <br><br><br><br><br><br><br>
+        <% } %>
+        <% if(users.length == 2) { %>
+        <br><br><br><br>
+        <% } %>
+        <% if(users.length == 3) { %>
+        <br>
+        <% } %>
+        <% include ./includes/footer %>
+        <script src="/public/js/ban.js"></script>
+        <script>
+            function goBack() {
+                window.location.href = "http://localhost:3000/CustomerCare";
+            }
+        </script>
+    </body>
+</html>

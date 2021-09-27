@@ -1,0 +1,229 @@
+body{
+    background-image: url("/public/images/bgpic2.png");
+    background-repeat: none;
+}
+
+.bgwhite {
+    background-color: white;
+    box-shadow: 0 2px 4px 0 #c9ced6;
+}
+
+.bigger {
+    font-size: 1.5em;
+}
+.highlight{
+    padding: 0px 0px 0px 7px;
+    border-left: 5px solid rgb(150, 0, 0)
+}
+
+.rgb150 {
+    color: rgb(150, 0, 0);
+    font-weight: bold;
+}
+
+input::-webkit-input-placeholder {
+    color: black;
+    opacity: 0.3;
+}
+
+.fa-image:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+textarea::-webkit-input-placeholder{
+    color: black;
+    opacity: 0.3;
+}
+
+.invert:hover{
+    filter: invert(100%);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center{
+    text-align: center;
+}
+
+.paddingLeft{
+    padding-left: 5px;
+}
+
+.shortHR{
+    width: 95%;
+}
+
+/* Men's Categories */
+#menClothing{
+    display:none;
+}
+#menBags{
+    display: none;
+}
+#menAccessories{
+    display: none;
+}
+#menWatches{
+    display: none;
+}
+#menFootwear{
+    display: none;
+}
+#menTopSize{
+    display: none;
+}
+#menBottomSize{
+    display: none;
+}
+#menBagMaterial{
+    display: none;
+}
+#watchMovement{
+    display: none;
+}
+#watchStrapType{
+    display: none;
+}
+#watchDial{
+    display: none;
+}
+#menShoeSize{
+    display: none;
+}
+
+/* Women's Categories */
+#womenClothing{
+    display: none;
+}
+#womenDresses{
+    display: none;
+}
+#womenBags{
+    display: none;
+}
+#womenAccessories{
+    display: none;
+}
+#womenJewelry{
+    display: none;
+}
+#womenFootwear{
+    display: none;
+}
+#womenTopSize{
+    display: none;
+}
+#womenBottomSize{
+    display: none;
+}
+#womenBagMaterial{
+    display: none;
+}
+#womenShoeSize{
+    display: none;
+}
+
+#step2{
+    display: none;
+}
+
+#step3{
+    display: none;
+}
+
+#step4{
+    display: none;
+}
+
+#listingMen{
+    display: none;
+}
+
+#listingWomen{
+    display: none;
+}
+
+#warningText{
+    display: none;
+    color: red;
+    font-size: 16px;
+}
+
+.listing {
+    border: none;
+    width: 40%;
+    background-color: white;
+    border-bottom: 2px solid rgb(190, 190, 190);
+}
+.listing:focus{
+    outline:none;
+    width:100%;
+    border-bottom: 2px solid rgb(228, 39, 39);
+    transition: 0.5s;
+}
+.listing:not(:focus){
+    transition: 0.5s;
+}
+
+.select {
+    padding: 0px 0px 10px 0px;
+    border: none;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid rgb(190, 190, 190);
+}
+.select:focus{
+    outline:none;
+    border-bottom: 2px solid rgb(228, 39, 39);
+    transition: 0.3s;
+}
+.select:not(:focus){
+    transition: 0.3s;
+}
+
+.textarea {
+    border: none;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid rgb(190, 190, 190);
+}
+.textarea:focus{
+    outline:none;
+    border-bottom: 2px solid rgb(228, 39, 39);
+    transition: 0.5s;
+}
+.textarea:not(:focus){
+    transition: 0.5s;
+}
+
+
+
+.brandInput {
+    border: none;
+    width: 21%;
+    background-color: white;
+    border-bottom: 2px solid rgb(190, 190, 190);
+}
+.brandInput:focus{
+    outline:none;
+    width:50%;
+    border-bottom: 2px solid rgb(228, 39, 39);
+    transition: 0.5s;
+}
+.brandInput:not(:focus){
+    transition: 0.5s;
+}
+
+.other{
+    display:none;
+}
+
+#menBrand{
+    display: none;
+}
+#womenBrand{
+    display: none;
+}

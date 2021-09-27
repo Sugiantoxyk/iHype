@@ -1,0 +1,38 @@
+.faded, .faded:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.faded:hover {
+    color: rgb(228, 39, 39);
+    transition: all .1s ease-in-out;
+    text-decoration: none;
+}
+
+.glyphicon-menu-right {
+    color: rgb(228, 39, 39);
+}
+
+.notiBoxes {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px 15px;
+    position: relative;
+    font-size: 16px;
+}
+
+.buttonDiv {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.transATag {
+    text-decoration: none;
+    color: rgb(228, 39, 39);
+}
+.transATag:hover, .transATag:focus {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+}

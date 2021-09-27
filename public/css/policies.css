@@ -1,0 +1,37 @@
+.faded, .faded:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.faded:hover {
+    color: rgb(228, 39, 39);
+    transition: all .1s ease-in-out;
+    text-decoration: none;
+}
+
+.glyphicon-menu-right {
+    color: rgb(228, 39, 39);
+}
+
+hr {
+    border-color: rgb(228, 39, 39);
+}
+
+h1, h4 {
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.content p, .content li {
+    font-size: 16px;
+}
+
+.content ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.spacesDiv {
+    padding-left: 40px;
+}

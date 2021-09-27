@@ -1,0 +1,160 @@
+body {
+    background-color: rgb(20, 21, 25);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+#goBackHome {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.glyphicon {
+    color: rgb(228, 39, 39);
+    font-size: 14px;
+}
+#goBackHome a, #goBackHome a:focus {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+#goBackHome a:hover {
+    color: rgb(228, 39, 39);
+}
+
+/* Container */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.titleTitle, .adminTitle {
+    font-size: 50px;
+    font-family: "Verdana";
+    font-weight: bold;
+    margin-left: -100px;
+}
+#whenAdmin {
+    display: none;
+}
+#colAppear {
+    display: none;
+}
+#colsmAppear {
+    display: block;
+}
+
+/* Left Container */
+.logo {
+    width: 100px;
+}
+.logoImage {
+    width: 200px;
+}
+
+/* Right Container */
+.rightCont {
+    margin-top: 20px;
+}
+
+/* Login Container */
+#loginCont {
+    display: block;
+}
+.inputs {
+    border: 1px solid rgb(228, 39, 39);
+    padding-left: 20px;
+    border-radius: 5px;
+    width: 300px;
+    height: 45px;
+    background-color: transparent;
+    outline: none;
+}
+.inputs:focus {
+    border-color: rgb(165, 33, 33);
+}
+.continueButton {
+    border: 1px solid rgb(228, 39, 39);
+    border-radius: 5px;
+    width: 300px;
+    height: 45px;
+    background-color: rgb(228, 39, 39);
+    outline: none;
+}
+.continueButton:hover {
+    background-color: rgb(165, 33, 33);
+    border-color: rgb(165, 33, 33);
+    transition: all .1s ease-in-out;
+}
+#changeButton {
+    cursor: pointer;
+    color: rgb(228, 39, 39);
+}
+#changeButton:hover {
+    cursor: pointer;
+    color: white;
+}
+#errorText {
+    color: rgb(228, 50, 50);
+}
+
+/* Register Container */
+#registerCont {
+    display: none;
+}
+
+/* Second Row Container */
+.secondRow {
+    background-color: rgb(34, 34, 34);
+    margin: 40px auto;
+    font-size: 14px;
+    padding: 20px 0 10px 0;
+    color: gray;
+}
+
+@media screen and (min-width: 768px) {
+    .rightCont {
+        border-left: 1px solid white;
+    }
+    .secondRow {
+        width: 700px;
+    }
+    #colAppear {
+        display: block;
+    }
+    #colsmAppear {
+        display: none;
+    }
+}
+
+/* Bottom right div */
+#smallDiv {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: rgba(35, 36, 43, 0.5);
+    border-radius: 3px;
+}
+#userUser, #adminAdmin {
+    cursor: pointer;
+    color: gray;
+    font-size: 15px;
+    padding: 3px 7px;
+    border-radius: 3px;
+}
+#userUser:hover, #adminAdmin:hover {
+    color: white;
+    background-color:  rgb(50, 50, 53);
+    transition: all .1s ease-in-out;
+}
+.onThis {
+    color: white !important;
+    background-color:  rgb(50, 50, 53);
+}
+#adminLoginCont {
+    display: none;
+}

@@ -1,0 +1,294 @@
+.sidePic{
+    width: 100px;
+}
+
+.sidePic:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.evidence{
+    border: 3px solid black;
+}
+
+.borderRight{
+    border-right: 1px solid grey;
+}
+
+.brand{
+    font-size: 32px;
+}
+
+.listingTitle{
+    font-family: "Bahnschrift Condensed";
+    font-size: 24px;
+}
+
+.conPic{
+    width: 35px;
+}
+
+.itemCondition{
+    opacity: 0.7;
+    font-style: italic;
+    font-size: 17px;
+}
+
+.itemCondition:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.newline {
+    white-space: pre-wrap;
+    font-size: 18px;
+}
+
+/* Buttons */
+
+.reportBtn{
+    font-size: 16px;
+}
+
+.buttons{
+    padding-top: 20px;
+}
+
+.likeBtn{
+    font-size: 20px;
+}
+.offerBtn{
+    background-color: #333;
+    color: white;
+    border: 1px solid #333;
+    font-size: 18px;
+    padding: 5px 15px 5px 15px;
+}
+.offerBtn:hover{
+    background-color: #BF2101;
+    border: 1px solid #BF2101;
+}
+.offerBtn:focus{
+    outline: 0;
+}
+
+.chatBtn{
+    background-color: #fff;
+    border: 1px solid #333;
+    font-size: 18px;
+    padding: 5px 15px 5px 15px;
+}
+.chatBtn:hover{
+    border: 1px solid #BF2101;
+    text-decoration: none;
+    color: #BF2101;
+}
+.chatBtn:focus{
+    outline: 0;
+}
+.chatLink{
+    color: black;
+}
+
+.deleteBtn{
+    background-color: rgb(182, 0, 0);
+    border: 1px solid rgb(182, 0, 0);
+    font-size: 18px;
+    padding: 5px 15px 5px 15px;
+    color: white;
+}
+.deleteBtn:hover{
+    background-color: rgb(223, 0, 0);
+    border: 1px solid rgb(223, 0, 0);
+}
+.deleteBtn:focus{
+    outline: 0;
+}
+
+.editBtn{
+    background-color: #fff;
+    border: 1px solid #333;
+    font-size: 18px;
+    padding: 5px 15px 5px 15px;
+}
+
+.editBtn:hover{
+    border: 1px solid #BF2101;
+    color: #BF2101;
+}
+.editBtn:focus{
+    outline: 0;
+}
+
+.cancelBtn{
+    background-color: #fff;
+    border: 1px solid #333;
+    font-size: 18px;
+    padding: 5px 15px 5px 15px;
+    display: none;
+}
+.cancelBtn:hover{
+    border: 1px solid #BF2101;
+    color: #BF2101;
+}
+.cancelBtn:focus{
+    outline: 0;
+}
+
+.updateBtn{
+    background-color: rgb(0, 4, 245);
+    border: 1px solid rgb(0, 4, 245);
+    font-size: 18px;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    display: none;
+}
+.updateBtn:hover{
+    background-color: rgb(0, 81, 255);
+    border: 1px solid rgb(0, 81, 255);
+}
+.updateBtn:focus{
+    outline: 0;
+}
+
+#cancelBtn{
+    display:none;
+}
+
+.Rborder {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.reservedText{
+    color: grey;
+    font-style: italic;
+}
+
+.whole {
+    font-size: 1.5em;
+}
+
+.commentUsername{
+    font-weight: bold;
+    padding: 0px 0px 10px 0px
+}
+
+.detailInputs {
+    padding: 5px 5px;
+    border: none;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid white;
+}
+.detailInputs:focus{
+    outline:none;
+    border-bottom: 2px solid rgb(228, 39, 39);
+    transition: 0.5s;
+}
+
+.listingInputs {
+    border: none;
+    width: 90%;
+    background-color: white;
+    border-bottom: 2px solid white;
+}
+
+.listingInputs:focus{
+    outline:none;
+    border-bottom: 2px solid rgb(228, 39, 39);
+    transition: 0.5s;
+}
+
+.selectInputs {
+    padding: 0px 0px 5px 0px;
+    border: none;
+    width: 30%;
+    background-color: white;
+    border-bottom: 2px solid rgb(228, 39, 39);
+}
+
+.selectInputs:focus{
+    outline:none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.textareaInput {
+    border: none;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid white;
+}
+
+.textareaInput:focus{
+    outline:none;
+    border-bottom: 2px solid rgb(228, 39, 39);
+    transition: 0.5s;
+}
+
+.BGwhite {
+    background-color: white;
+}
+
+.uploader {
+    color: grey;
+    font-size: 16px;
+}
+
+.none{
+    display:none;
+}
+
+.selectCondition{
+    cursor: pointer;
+    display:none;
+    padding: 5px 0px 0px 0px;
+}
+
+#comments{
+    font-size: 16px;
+}
+
+.commentProfileImg{
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.alignRight{
+    float: right;
+}
+
+.reportBtn{
+    background-color: rgb(247, 247, 247);
+}
+
+.reportBtn{
+    background-color: rgb(247, 247, 247);
+}
+
+#cat1-info{
+    display: block;
+    color: red;
+}
+
+#cat2-info, #cat3-info, #cat4-info, #cat5-info {
+    display: none;
+    color: red;
+}
+
+.cat-types{
+    padding: 10px;
+    font-size: 18px;
+    border-color: #cccccc;
+    border-radius: 5px;
+}
+
+.cat-select{
+    display: none;
+    padding: 10px;
+    font-size: 18px;
+    border-color: #cccccc;
+    border-radius: 5px;
+}

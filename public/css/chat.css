@@ -1,0 +1,213 @@
+#hello {
+    height: 650px;
+}
+
+#cat {
+    text-align: center;
+    padding-top: 29px; 
+}
+
+#makeOffer {
+    outline: none;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid black;
+}
+
+.borderD{
+    border-top: 1px solid grey;
+}
+
+#lion {
+    padding-bottom: 7px;
+    padding-top: 5px;
+    padding-left: 50px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+#tiger {
+    text-align: center;
+    padding: 19px 0px 20px 0px;
+    font-size: 15px;
+}
+
+#offerInputDiv, #moneyInputDiv {
+    display: block;
+    padding-top: 10px;
+}
+
+#productName {
+    text-align: center;
+    padding-top: 10px 0px 0px 0px;
+    text-align: left;
+}
+
+#Uploadfile {
+    flex: 0 auto;
+    background-image: url(https://www-cdn.karousell.com/images/photos-icon.png);
+    width: 3rem;
+    height: 3rem;
+    background-position: 50%;
+    margin: 3px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#file {
+    padding: 0px 5px 0px 60px;
+}
+
+#message {
+    overflow-y: auto;
+    height: 100%;
+    width: 420px;
+    margin-left: 20px;
+    border: 0;
+    resize: none;
+    display: inline-block;
+}
+#sendButton {
+    border-radius: .4rem;
+    background-color: #33a0e8;
+    border-color: #33a0e8;
+    color: #fff;
+    height: 50px;
+    width: 70px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+#msg {
+    flex: 1;
+    overflow: auto;
+    margin-top: .7rem;
+}
+
+#chatDialog {
+    overflow-y: scroll;
+    height: 500px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.modal-header {
+    height: 60px;
+}
+#Tclose {
+    margin-top: -35px;
+    outline: none;
+}
+
+#chatInfo {
+display: none;
+border-left: 1px solid darkgray;
+
+}
+#chatInbox {
+    height: 500px;
+    padding-right: 5px;
+    padding-left: 0px;   
+}
+
+#sellerView{
+    display: none;
+    padding: 15px 23px 10px 0px;
+}
+.waitOffer{
+    opacity: 0.6;
+}
+
+.inboxItem {
+    border-bottom: 1px solid black;
+    padding-bottom: 7px;
+}
+
+#inbox {
+    height: 600px;
+    overflow-y: scroll;
+}
+#chatTitle {
+    border-bottom: 1px solid darkgray;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.pendingMessage{
+    text-align: right;
+    opacity: 0.6;
+}
+
+#secondBuyerView, #secondSellerView, #thirdBuyerView, #thirdSellerView, #fourthView{
+    text-align: right;
+    display: none;
+}
+
+.timing {
+    float: right;
+    font-size: 13px;
+    padding: 7px;
+}
+
+#inboxIMG {
+    height: 56px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+#thirdBuyerView {
+    padding: 10px 20px 10px 0px;
+}
+
+#secondBuyerView {
+    padding: 15px 25px 0px 0px;
+    text-align: center;
+}
+
+#secondSellerView {
+    padding: 10px 20px 10px 0px;
+}
+
+#thirdSellerView {
+    padding: 10px 25px 10px 0px;
+}

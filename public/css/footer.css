@@ -1,0 +1,56 @@
+/* Footer */
+.main-footer {
+    background-color: rgb(17, 10, 10);
+    margin-top: 40px;
+}
+
+/* Footer Top */
+.footTop {
+    font-size: 13px;
+    padding-top: 30px;
+    color: #808080;
+}
+.footerUl {
+    list-style-type: none;
+}
+.footerA, .footerA:focus {
+    text-decoration: none;
+    color: #808080;
+}
+.footerA:hover {
+    text-decoration: none;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+.ourEmail {
+    color: rgb(228, 39, 39);
+}
+.ourEmail:hover {
+    color: white;
+    transition: all .1s ease-in-out;
+}
+.footerUl strong {
+    color: white;
+    font-size: 15px;
+}
+.glyphicon-menu-right {
+    color: rgb(228, 39, 39);
+}
+.paymentMethodContainer {
+    margin-top: 35px;
+}
+.SocialSocial {
+    Width: 50px;
+}
+.PayPay {
+    width: 90px;
+}
+
+/* Footer Bottom */
+.footBottom {
+    padding-top: 10px;
+	font-size: 13px;
+    text-align: center;
+    color: #808080;
+    border-top: white solid 1px;
+}

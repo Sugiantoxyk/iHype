@@ -1,0 +1,518 @@
+/* Top Container */
+.profileCont {
+    position: relative;
+    text-align: center;
+    padding-bottom: 0;
+}
+/* .profileImg css in header.css */
+#profileTopUsername {
+    font-size: 50px;
+    font-weight: bold;
+}
+#profileSubTab {
+    list-style-type: none;
+    margin-bottom: -1px;
+}
+#profileTab, #personalTab, #listingsTab, #favoritesTab, #reviewsTab, #transactionsTab {
+    display: inline-block;
+    background-color: #d8d8d8;
+    padding: 8px 14px;
+    margin: 5px 2px 0 2px;
+    border: 1px solid #e3e3e3;
+    border-bottom: none;
+}
+.subTabList:hover {
+    background-color: white !important;
+    cursor: pointer;
+}
+#profileTab {
+    background-color: white;
+}
+#changeImageButton, #KaiButton {
+    position: absolute;
+    right: 20px;
+}
+#claimCodeButton {
+    position: absolute;
+    left: 20px;
+    color: white;
+    background-color: rgb(228, 39, 39);
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(158, 18, 18);
+}
+#claimCodeButton:hover {
+    background-color: rgb(158, 18, 18);
+    transition: all .1s ease-in-out;
+}
+
+/* Sub Tabs */
+.col-md-offset-1 {
+    margin-top: 10px;
+}
+.shiftLeft {
+    margin-bottom: 10px;
+}
+.myProfileCont {
+    display: block;
+}
+.myPersonalInformationCont {
+    display: none;
+}
+.myListingsCont {
+    display: none;
+}
+.myFavoritesCont {
+    display: none;
+}
+.myReviewsCont {
+    display: none;
+}
+.myTransactionsCont {
+    display: none;
+}
+
+/* General */
+label {
+    width: 100%;
+}
+.inputName {
+    font-size: 18px;
+}
+.inputTextArea {
+    padding: 5px 5px;
+}
+.inputTextArea:focus {
+    outline: none;
+    border: 1px solid rgb(228, 39, 39);
+}
+.inputs {
+    padding: 5px 5px;
+    border: none;
+    border-bottom: 1px solid rgb(95, 95, 95);
+    width: 70%;
+    margin-bottom: 15px;
+    margin-top: -5px;
+}
+.inputs:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(228, 39, 39);
+}
+
+/* My Profile Container */
+.myProfileCont {
+    position: relative;
+}
+#errorText {
+    color: rgb(228, 50, 50);
+}
+#profileMobile {
+    position: relative;
+    padding-left: 30px;
+}
+#profileMobile:invalid + span:after {
+    content: "✖";
+    color: #f00;
+    padding-left: 5px;
+}
+#profileMobile:valid + span:after {
+    content: "✓";
+    color: #26b72b;
+    padding-left: 5px;
+}
+#insideInputMobile {
+    position: absolute;
+    top: 374px;
+}
+#profileBio {
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 200px;
+    max-height: 200px;
+}
+.disabled {
+    background-color: white;
+}
+.disable {
+    background-color: white;
+}
+.bottomRightButtons {
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid gainsboro;
+    background-color: white;
+}
+.bottomRightButtons:hover, .bottomRightButtons:focus {
+    outline: none;
+    text-decoration: none;
+    background-color: rgb(250, 249, 249);
+    cursor: pointer;
+}
+.bottomRightButtons2 {
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: rgb(228, 39, 39);
+    border: 1px solid rgb(228, 39, 39);
+    background-color: white;
+    margin: 0 5px;
+}
+.bottomRightButtons2:hover, .bottomRightButtons2:focus {
+    outline: none;
+    text-decoration: none;
+    background-color: rgb(228, 39, 39);
+    color: white;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+#editProfileButton {
+    display: block;
+}
+#updateProfileButton, #cancelProfileButton {
+    display: none;
+}
+
+/* My Personal Information Container */
+#changePasswordButton, #changeUsernameButton, #changeImageButton, #KaiButton {
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: rgb(228, 39, 39);
+    border: 1px solid rgb(228, 39, 39);
+    background-color: white;
+}
+#changePasswordButton:hover, #changeUsernameButton:hover, #changeImageButton:hover, #KaiButton:hover {
+    color: white;
+    background-color: rgb(228, 39, 39);
+    transition: all .1s ease-in-out;
+}
+#changePasswordButton:focus, #changeUsernameButton:focus, #changeImageButton:focus, #KaiButton:focus {
+    outline: none;
+}
+#editPriProfileButton {
+    display: block;
+}
+#updatePriProfileButton, #cancelPriProfileButton {
+    display: none;
+}
+#profileCardNumber:invalid + span:after, #profileCVV:invalid + span:after, #profileEXP:invalid + span:after {
+    content: "✖";
+    color: #f00;
+    padding-left: 5px;
+}
+#profileCardNumber:valid + span:after, #profileCVV:valid + span:after, #profileEXP:valid + span:after {
+    content: "✓";
+    color: #26b72b;
+    padding-left: 5px;
+}
+
+/* My Listings Container */
+.noListing {
+    font-weight: bold;
+    font-size: 18px;
+}
+#createListingButton {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(228, 39, 39);
+    padding: 8px 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(158, 18, 18);
+}
+#createListingButton:hover {
+    background-color: rgb(158, 18, 18);
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+
+/* My Favorites Container */
+.myFavDiv {
+    padding: 5px !important;
+}
+.prodLink, .prodLink:hover {
+    text-decoration: none;
+}
+.myFav {
+    padding: 0 10px;
+    height: 100%;
+    border: 1px solid grey;
+    color: black;
+}
+.myFav:hover {
+    border: 1px solid grey;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+}
+.prodUserPic {
+    border-radius: 50%;
+}
+.prodName {
+    font-size: 18px;
+}
+.prodDummie {
+    display: none;
+}
+/* My Listings and My Favorites Container*/
+.prodPhoto {
+    width: 100%;
+    border: 1px solid grey;
+}
+
+/* My Reviews Container */
+.reviewDiv {
+    padding: 15px 40px;
+    font-size: 18px;
+}
+.reviewPosterLink {
+    text-decoration: none;
+    color: rgb(228, 39, 39);
+}
+.reviewPosterLink:hover, .reviewPosterLink:focus {
+    color: rgb(54, 54, 54);
+    cursor: pointer;
+    text-decoration: none;
+}
+.reviewReview {
+    margin-top: 10px;
+}
+#writeReviewModal {
+    top: 7em;
+}
+#reviewComment {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100;
+    max-height: 100px;
+}
+
+/* My Transactions Container */
+.transATag {
+    text-decoration: none;
+    color: rgb(228, 39, 39);
+}
+.transATag:hover, .transATag:focus {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+}
+.transactionTitle {
+    margin-top: 20px;
+}
+.myTransactionDetails {
+    border: 1px solid grey;
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+.payNowButton, #payNowModalPay {
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: rgb(228, 39, 39);
+    border: 1px solid rgb(228, 39, 39);
+    background-color: white;
+}
+.payNowButton:hover, #payNowModalPay:hover {
+    color: white;
+    background-color: rgb(228, 39, 39);
+    transition: all .1s ease-in-out;
+}
+#payNowModal {
+    top: 7em;
+}
+#payNowModalPrice {
+    float: left;
+    font-Weight: bold;
+    font-size: 18px;
+}
+.showMore {
+    text-decoration: underline;
+    display: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#payNowModalText {
+    text-align: center;
+    font-size: 17px;
+    padding: 0 20px;
+}
+
+/* MODAL */
+#changePassError {
+    border: 1px solid rgb(228, 39, 39);
+    color: rgb(228, 39, 39);
+    background-color: rgb(250, 158, 173);
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    display: none;
+    font-weight: bold;
+}
+#changePasswordModal, #changeUsernameModal {
+    top: 7em;
+}
+.modal-header {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(228, 39, 39);
+}
+.passwordInputs, .usernameInput {
+    padding: 5px 5px;
+    border-radius: 3px;
+    border: 1px solid #adadad;
+    width: 70%;
+}
+.passwordInputs:focus, .usernameInput:focus {
+    outline: none;
+    border: 1px solid rgb(228, 39, 39);
+}
+button:focus, #modalChangePasswordButton:focus, #modalChangeUsernameButton:focus {
+    outline: none;
+}
+.modalButtons {
+    border-color: rgb(228, 39, 39);
+    color: rgb(228, 39, 39);
+}
+.modalButtons:hover {
+    color: white;
+    background-color: rgb(228, 39, 39);
+    border-color: rgb(228, 39, 39);
+    transition: all .1s ease-in-out;
+}
+#modalChangePasswordButton, #modalChangeUsernameButton, #updateAvatarButton {
+    color: white;
+    background-color: rgb(196, 196, 196);
+    border-color: gray;
+}
+.modalButtonsAct {
+    border-color: rgb(228, 39, 39) !important;
+    color: rgb(228, 39, 39) !important;
+    background-color: white !important;
+}
+.modalButtonsAct:hover {
+    color: white !important;
+    background-color: rgb(228, 39, 39) !important;
+    transition: all .1s ease-in-out !important;
+}
+.close:hover {
+    color: rgb(228, 39, 39);
+    transition: all .1s ease-in-out;
+}
+
+/* Show iHype Code Modal */
+#hypeCodeModal {
+    top: 7em;
+}
+#hypeCodeBody {
+    text-align: center;
+}
+#codeHere {
+    font-size: 24px;
+    color: rgb(228, 39, 39);
+}
+
+/* Claim iHype Code Modal */
+#claimCodeModal{
+    top: 10em;
+}
+#hypeCodeBody {
+    text-align: center;
+    font-size: 17px;
+}
+#hypeCodeInput {
+    width: 30%;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+/* OVERLAY for changing Avatar */
+#overlayCont {
+    text-align: center;
+}
+#overlay {
+    position: fixed;
+    z-index: 99999;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .1s ease-in-out;
+    display: none;
+}
+#overlayX {
+    position: absolute;
+    right: 20px;
+    font-size: 100px;
+    overflow: hidden;
+    font-family: Helve;
+    background: none;
+    border: none;
+    outline: none;
+    transition: all .1s ease-in-out;
+    color: white;
+}
+#overlayX:hover {
+    color: rgb(228, 39, 39);
+}
+#overlayProfileImgCont {
+    text-align: center;
+    margin-top: 100px;
+}
+/* #overlayProfileImg css followed .profileImg */
+#overlayTextCont {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 50px !important;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 50%;
+    padding: 25px;
+    background-color: rgb(34, 34, 34);
+}
+#uploadImgButton, #uploadImgButton:focus {
+    background-color: rgb(34, 34, 34);
+    border: 1px solid rgb(228, 39, 39);
+    color: rgb(228, 39, 39);
+    border-radius: 3px;
+    padding: 2px 12px !important;
+}
+#uploadImgButton:hover {
+    color: white;
+    background-color: rgb(228, 39, 39);
+    transition: all .1s ease-in-out;
+    border-color: white;
+}
+#overlayButtonsCont {
+    text-align: right;
+}
+#updateAvatarButton, #updateAvatarButton:focus {
+    display: none;
+    margin-top: 10px;
+    border-color: white;
+    color: white;
+    background-color: rgb(228, 39, 39);
+    outline: none;
+}
+#updateAvatarButton:hover {
+    border-color: white;
+    color: white;
+    background-color: rgb(182, 31, 31);
+    transition: all .1s ease-in-out;
+}
+
+/* Small Width */
+@media screen and (max-width: 450px) {
+    #profileContImage {
+        margin-top: 50px;
+    }
+}
+
+/* Kai Model */
+#reportinguser, #reportinguser:focus {
+    font-size: 25px;
+    color: red;
+    outline: none;
+    border-width: 0px;
+    background-color: white;
+}
